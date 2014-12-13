@@ -102,7 +102,7 @@ var rasps=[],found=false;
 client.on('connect', function () { // When connected
 
     // subscribe to a topic
-    client.subscribe('hello/world', function () {
+    client.subscribe('hk/machines', function () {
         // when a message arrives, do something with it
         client.on('message', function (topic, message, packet) {
             //onerasp=JSON.stringify(message);
